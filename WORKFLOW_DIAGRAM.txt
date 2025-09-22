@@ -1,0 +1,145 @@
+LangGraph Multi-Agent Architecture - ASCII Flow Diagram
+======================================================
+
+                    🚀 TRANSACTION INITIATED
+                              │
+                              ▼
+                    ┌─────────────────────┐
+                    │   Data Collection   │
+                    │       Agent         │
+                    │ Customer│Product│    │
+                    │   Seller Data       │
+                    └─────────┬───────────┘
+                              │
+                              ▼
+                 ┌─────────────┴─────────────┐
+                 │                           │
+                 ▼                           ▼
+    ┌─────────────────────┐      ┌─────────────────────┐
+    │ Return Prediction   │      │ Sentiment Analysis  │
+    │      Agent          │      │       Agent         │
+    │ 🧠 Neural Network   │      │ 🤗 HuggingFace     │
+    │ + MFE Features      │      │   Transformers      │
+    └─────────┬───────────┘      └─────────┬───────────┘
+              │                            │
+              └─────────────┬──────────────┘
+                            │
+                            ▼
+                  ┌─────────────────────┐
+                  │   Decision Point    │
+                  │  ⚖️ Risk Assessment │
+                  │ Critical│High│Med   │
+                  │      │Low            │
+                  └─────────┬───────────┘
+                            │
+                ┌───────────┴───────────┐
+                │                       │
+                ▼                       ▼
+    ┌─────────────────────┐  ┌─────────────────────┐
+    │ Notification Agent  │  │ Recommendation      │
+    │ 📨 Customer Alerts  │  │       Agent         │
+    │ 📨 Seller Alerts    │  │ 💡 Alternatives     │
+    └─────────┬───────────┘  │ 💡 Size Guide       │
+              │              │ 💡 Improvements     │
+              │              └─────────┬───────────┘
+              │                        │
+              └────────────┬───────────┘
+                           │
+                           ▼
+                 ┌─────────────────────┐
+                 │   Process Complete  │
+                 │ Enhanced Customer   │
+                 │    Experience       │
+                 └─────────────────────┘
+
+==============================================================================
+
+TECHNOLOGY STACK:
+==================
+
+🧠 Neural Network:     TensorFlow/Keras with MFE feature extraction
+🤗 NLP Models:         HuggingFace Transformers (RoBERTa, DistilRoBERTa)
+🔗 Orchestration:      LangGraph + LangChain multi-agent framework
+📊 Features:           Customer behavior, Product data, Seller metrics
+🎯 Output:             0-100% return probability prediction
+📱 Alerts:             Real-time notifications to stakeholders
+
+RISK LEVEL CLASSIFICATION:
+===========================
+
+🔴 CRITICAL (70%+):    Immediate intervention required
+🟠 HIGH (50-70%):      Strong preventive action needed
+🟡 MEDIUM (30-50%):    Moderate guidance provided
+🟢 LOW (<30%):         Standard processing
+
+DATA FLOW PROCESS:
+==================
+
+1. Customer selects product → Transaction initiated
+2. Data Collection Agent gathers customer, product, seller data
+3. Return Predictor uses Neural Network with MFE features
+4. Sentiment Analyzer uses HuggingFace Transformers
+5. Decision Point assesses risk level (Critical/High/Medium/Low)
+6. High Risk → Notifications sent to customer & seller
+7. Recommendations generated (alternatives, size guide, improvements)
+8. Process complete with enhanced customer experience
+
+AGENT RESPONSIBILITIES:
+========================
+
+📊 Data Collection Agent:
+   - Fetches customer purchase history and demographics
+   - Retrieves product details and specifications
+   - Gathers seller ratings and performance metrics
+
+🧠 Return Prediction Agent:
+   - Extracts features using MFE transformation
+   - Runs neural network inference
+   - Calculates return probability (0-100%)
+   - Identifies key risk factors
+
+💭 Sentiment Analysis Agent:
+   - Analyzes customer feedback history
+   - Classifies sentiment (positive/negative/neutral)
+   - Detects emotions and concern areas
+   - Provides sentiment scores
+
+📨 Notification Agent:
+   - Creates personalized customer alerts
+   - Generates seller notifications
+   - Determines urgency levels
+   - Sends real-time communications
+
+💡 Recommendation Agent:
+   - Suggests alternative products
+   - Provides size guidance
+   - Recommends experience improvements
+   - Offers risk mitigation strategies
+
+INTEGRATION POINTS:
+===================
+
+🔌 Input Sources:
+   - Customer database
+   - Product catalog
+   - Seller metrics
+   - Review systems
+   - Transaction logs
+
+📤 Output Channels:
+   - Email notifications
+   - SMS alerts
+   - Push notifications
+   - Dashboard updates
+   - API responses
+
+BUSINESS IMPACT:
+================
+
+📈 Reduced Returns:    25-40% reduction in return rates
+😊 Customer Satisfaction: Proactive issue resolution
+💰 Cost Savings:      Lower logistics and processing costs
+📊 Seller Quality:    Improved seller performance metrics
+🎯 Personalization:   Enhanced customer experience
+
+==============================================================================

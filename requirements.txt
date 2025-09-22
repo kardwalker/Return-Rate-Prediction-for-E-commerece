@@ -34,7 +34,27 @@ filelock==3.19.1
 # jupyterlab
 
 # Optional: Advanced ML libraries (uncomment if needed)
-# tensorflow
+tensorflow==2.13.1
+keras==2.13.1
+
+# Hyperparameter optimization
+scikit-optimize==0.9.0
+
+# LangGraph and LangChain for agent architecture
+langgraph==0.0.55
+langchain==0.1.0
+langchain-core==0.1.0
+
+# Hugging Face transformers for sentiment analysis
+transformers==4.35.0
+torch==2.1.0
+tokenizers==0.15.0
+
+# Additional dependencies for agent system
+networkx==3.2
+Pillow==10.1.0
+
+# Optional: Additional ML libraries
 # torch
 # xgboost
 # lightgbm
